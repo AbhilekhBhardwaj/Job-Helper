@@ -122,7 +122,7 @@ export default function App() {
 
   // Send data to OpenAI
   const sendDataToOpenAI = async () => {
-    const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY || process.env.REACT_APP_OPENAI_API_KEY;
+    const OPENAI_API_KEY = import.meta.env.VITE_OPENAI_API_KEY ;
   
     if (!OPENAI_API_KEY) {
       setError('OpenAI API key not configured. Please add it to your environment variables.');
@@ -227,13 +227,13 @@ export default function App() {
           <div className="upload-section">
             <h2>Upload Resume PDF</h2>
             <label htmlFor="resume">Upload Resume</label>
-            <input type="file" accept="application/pdf" onChange={handlePdfUpload} name='resume'/>
+            <input type="file" accept="application/pdf" onChange={handlePdfUpload} id='resume'/>
           </div>
 
           <div className="upload-section">
             <h2>Upload Questions Image</h2>
             <label htmlFor="image">Upload Image</label>
-            <input type="file" accept="image/*" onChange={handleImageUpload} multiple name='image' />
+            <input type="file" accept="image/*" onChange={handleImageUpload} multiple id='image' />
           </div>
 
           <div className="url-container">
