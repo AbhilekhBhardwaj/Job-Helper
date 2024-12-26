@@ -106,6 +106,7 @@ h1 {
   letter-spacing: 0.5px;
   user-select: none;
   cursor: pointer;
+  border-radius: 8px ;
   box-shadow: 5px 12px 23px rgba( 0,0,0.40) ;
 }
 
@@ -129,7 +130,6 @@ h1 {
   font-size: 1.2rem;
   text-align: center;
   justify-content: center;
-  grid-column: span 3;
 }
 
 .submit-container button:hover {
